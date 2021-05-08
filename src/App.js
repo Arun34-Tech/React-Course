@@ -14,9 +14,9 @@ function App() {
         <Navbar bg="dark" variant="dark">
           <Navbar.Brand href="#home">Navbar</Navbar.Brand>
           <Nav className="mr-auto">
-            <Nav.Link href="#Routefile"><Link to="/Routefile">Routefile</Link></Nav.Link>
-            <Nav.Link href="#features">Features</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
+            <Nav.Link href="Routefile"><Link to="/Routefile">About Us</Link></Nav.Link>
+            <Nav.Link href="Form">Form</Nav.Link>
+            <Nav.Link href="Body">Custome</Nav.Link>
           </Nav>
 
         </Navbar>
@@ -24,10 +24,15 @@ function App() {
         <Route path="/Routefile">
           <Routefile />
         </Route>
+        <Route path="/Form">
+          <Form />
+        </Route>
+        <Route path="/Body">
+          <Body />
+        </Route>
       </Switch>
       </Router>
-      <Api />
-  
+     
     </div>
 
   );
