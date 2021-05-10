@@ -2,10 +2,11 @@ import './App.css';
 import Body from './Component/Body';
 import User from './Component/User';
 import Form from './Component/Form';
-import Api from './Component/Api';
+import Header from './Component/Header';
 import { Navbar, Nav } from 'react-bootstrap';
 import Routefile from './Component/Routefile';
 import { Link, Route,BrowserRouter as Router, Switch } from 'react-router-dom';
+import AddRouter from './Component/AddRouter';
 
 function App() {
   return (
@@ -31,7 +32,9 @@ function App() {
           <Body />
         </Route>
       </Switch>
+      <AddRouter />
       </Router>
+     
      
     </div>
 
@@ -39,3 +42,4 @@ function App() {
 }
 
 export default App;
+
